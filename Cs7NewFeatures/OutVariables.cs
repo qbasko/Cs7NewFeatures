@@ -8,14 +8,22 @@ namespace Cs7NewFeatures
 {
     public class OutVariables
     {
-        public void Cs6Style()
+        public void Run()
+        {
+            Console.WriteLine(nameof(Cs6Style));
+            Cs6Style();
+            Console.WriteLine(nameof(Cs7Style));
+            Cs7Style();
+        }
+
+        private void Cs6Style()
         {
             int a, b;
             TestMethod(out a, out b);
             Console.WriteLine($"a = {a} \t b = {b} ");
         }
 
-        public void Cs7Style()
+        private void Cs7Style()
         {
             TestMethod(out int a, out int b);
             TestMethod(out var c, out var d);
@@ -26,7 +34,7 @@ namespace Cs7NewFeatures
         }
 
 
-        public void TestMethod(out int a, out int b)
+        private void TestMethod(out int a, out int b)
         {
             a = 11;
             b = 22;

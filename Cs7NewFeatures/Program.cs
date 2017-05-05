@@ -11,16 +11,15 @@ namespace Cs7NewFeatures
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(nameof(OutVariables));
+            var outVariables = new OutVariables();
+            outVariables.Run();
 
-            TestMethod(out int a, out int b);
-            Console.WriteLine($"a = {a} \t b = {b} ");
-        }
+            Console.WriteLine(nameof(PatternMatching));
+            var patternMatching = new PatternMatching();
+            patternMatching.Run();
 
-
-        static void TestMethod(out int a, out int b)
-        {
-            a = 1;
-            b = 1;
+            Console.Read();
         }
     }
 }
