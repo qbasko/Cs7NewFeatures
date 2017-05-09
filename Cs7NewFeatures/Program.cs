@@ -19,6 +19,10 @@ namespace Cs7NewFeatures
             var patternMatching = new PatternMatching();
             patternMatching.Run();
 
+            Console.WriteLine(nameof(Tuples));
+            var tuples = new Tuples();
+            tuples.Run();
+
             Console.Read();
         }
     }

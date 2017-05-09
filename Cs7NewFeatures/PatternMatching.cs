@@ -13,7 +13,6 @@ namespace Cs7NewFeatures
             public int Id { get; set; }
         }
 
-
         public void Run()
         {
             Cs7Is();
@@ -27,7 +26,6 @@ namespace Cs7NewFeatures
             {
                 Console.WriteLine(c.Id);
             }
-
         }
 
         private void Cs7Case()
@@ -51,11 +49,7 @@ namespace Cs7NewFeatures
                 default:
                     Console.WriteLine("Nothing to do");
                     break;
-
-
             }
-
-
         }
     }
 }
