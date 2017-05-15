@@ -23,6 +23,10 @@ namespace Cs7NewFeatures
             var tuples = new Tuples();
             tuples.Run();
 
+            Console.WriteLine(nameof(Ref));
+            var @ref = new Ref();
+            @ref.Run();
+
             Console.Read();
         }
     }
