@@ -10,7 +10,20 @@ namespace Cs7NewFeatures
     {
         public void Run()
         {
+            Console.WriteLine(Count());
+        }
 
+        private double Count()
+        {
+            double result = 0;
+            result += Math.Pow(2, 8);
+
+            return AddMore(result).current;
+
+            (double current, double previous) AddMore(double d)
+            {
+                return (d+100, d);
+            }
         }
     }
 }

@@ -10,15 +10,16 @@ namespace Cs7NewFeatures
     {
         public void Run()
         {
-            int[] tab = { 22, -10, 22 };
-            ref int minus_ten = ref smth(tab);
-            Console.WriteLine(tab[1] == -10);
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            ref int storageLocation = ref Find(array);
+            Console.WriteLine(array[1] == 2); //true
 
-            minus_ten = 22;
-            Console.WriteLine(tab[1] == 22);
+            storageLocation = 11;
+            Console.WriteLine(array[1] == 11); //true
+            Console.WriteLine(array[1]); // 11
         }
 
-        public ref int smth(int[] tab)
+        public ref int Find(int[] tab)
         {
             return ref tab[1];
         }

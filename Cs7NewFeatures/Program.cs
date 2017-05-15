@@ -27,6 +27,14 @@ namespace Cs7NewFeatures
             var @ref = new Ref();
             @ref.Run();
 
+            Console.WriteLine(nameof(LocalFunctions));
+            var localFunctions = new LocalFunctions();
+            localFunctions.Run();
+
+            Console.WriteLine(nameof(LiteralImprovements));
+            var literalImprovements = new LiteralImprovements();
+            literalImprovements.Run();
+
             Console.Read();
         }
     }

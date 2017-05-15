@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LiteralImprovements.cs" />
     <Compile Include="LocalFunctions.cs" />
     <Compile Include="OutVariables.cs" />
     <Compile Include="PatternMatching.cs" />
